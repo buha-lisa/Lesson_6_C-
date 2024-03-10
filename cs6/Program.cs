@@ -50,12 +50,11 @@
                             }
                             break;
                         }
-                    case 2:
-                    { 
-                        Matrix matrix1 = new Matrix(5, 5);
-                        Matrix matrix2 = new Matrix(5, 5);
+                    case 2: 
+                            Matrix matrix1 = new Matrix(5, 5);
+                            Matrix matrix2 = new Matrix(5, 5);
 
-                        Matrix matrix3 = matrix1 + matrix2;
+                            Matrix matrix3 = matrix1 + matrix2;
                             for (int i = 0; i < matrix3.Rows; i++)
                             {
                                 for (int j = 0; j < matrix3.Cols; j++)
@@ -64,9 +63,16 @@
                                 }
                                 Console.Write("\n");
                             }
-
-                        break;
-                    }
+                            Matrix matrix4 = matrix1 * 9;
+                            for (int i = 0; i < matrix3.Rows; i++)
+                            {
+                                for (int j = 0; j < matrix3.Cols; j++)
+                                {
+                                    Console.Write(matrix3.Data[i, j] + " ");
+                                }
+                                Console.Write("\n");
+                            }
+                            break;
                 }
                 if (task == 0) break;
             }
