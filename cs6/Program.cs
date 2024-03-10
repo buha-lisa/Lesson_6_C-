@@ -88,6 +88,80 @@
                             Console.Write("\n");
                         }
                         break;
+                    case 3:
+                        City city1 = new City
+                        {
+                            Name = "London", 
+                            Country = "UK",
+                            Population = 8908081
+                        };
+                        City city2 = city1 + 944;
+                        Console.WriteLine($"{city2.Name} - {city2.Country} - {city2.Population}");
+                        City city3 = new City()
+                        { 
+                            Name = "New York",
+                            Country = "USA",
+                            Population = 18908081
+                        };
+                        if (city1 == city3)
+                        {
+                            Console.WriteLine("==");
+                        }
+                        if (city1 != city3)
+                        {
+                            Console.WriteLine("!=");
+                        }
+                        if (city1 > city3)
+                        {
+                            Console.WriteLine(">");
+                        }
+                        if (city1 < city3)
+                        {
+                            Console.WriteLine("<");
+                        }
+                        if (city1.Equals(city3))
+                        {
+                            Console.WriteLine("==");
+                        }
+
+                        break;
+                    case 4:
+                        CreditCard card1 = new CreditCard
+                        {
+                            CVC = 423,
+                            PineCode = 8697,
+                            Money = 123
+                        };
+                        CreditCard card2 = card1 + 944;
+                        Console.WriteLine($"{card2.CVC} - {card2.PineCode} - {card2.Money}");
+                        CreditCard card3 = new CreditCard()
+                        {
+                            CVC = 424,
+                            PineCode = 8697,
+                            Money = 1234
+                        };
+                        if (card1 == card3)
+                        {
+                            Console.WriteLine("==");
+                        }
+                        if (card1 != card3)
+                        {
+                            Console.WriteLine("!=");
+                        }
+                        if (card1 > card3)
+                        {
+                            Console.WriteLine(">");
+                        }
+                        if (card1 < card3)
+                        {
+                            Console.WriteLine("<");
+                        }
+                        if (card1.Equals(card3))
+                        {
+                            Console.WriteLine("==");
+                        }
+
+                        break;
                 }
                 if (task == 0) break;
             }
