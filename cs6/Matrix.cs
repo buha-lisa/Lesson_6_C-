@@ -11,13 +11,7 @@
             Rows = row;
             Cols = col;
             Data = new int[row, col];
-            for (int i = 0; i < Rows; i++)
-            {
-                for (int j = 0; j < Cols; j++)
-                {
-                    Data[i, j] = i * j;
-                }
-            }
+            
         }
 
         public static Matrix operator +(Matrix a, Matrix b)
